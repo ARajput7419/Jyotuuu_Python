@@ -39,6 +39,12 @@
 # print(i)
 #
 
+
+
+
+
+
+
 aniket_list = [1,2,3,4,5,6,7,8,9,10,11,12]
 op = iter(aniket_list)
 
@@ -47,6 +53,10 @@ while True :
         print(op.__next__())
     except Exception:
         break
+
+
+
+
 
 io = 8758945
 print(io/100) # float division
