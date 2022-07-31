@@ -70,3 +70,50 @@ l1 = [100, 200, 300]
 print("List l1 is ", l1)
 l1.extend(range(0, 10))
 print(l1)
+
+# sort a list
+l1 = [10, 4, 2, 10.3, 899, 85]
+l1.sort()
+print(l1)
+
+# insert an element at an index . it does not replace
+
+l1 = [1, 2, 3, 4]
+print("Before Insertion ", l1)
+l1.insert(1, 100)
+print("After insertion ", l1)
+
+# replace an element
+l1[2] = 101
+print(l1)
+
+# reverse an list
+l1 = [1, 2, 3, 4, 1000, 2, 4, -1]
+l1.reverse()
+print(l1)
+
+# slicing l1 [ start : end ] default step = 1 or [ start:end :step]
+l1 = [1, 2, 3, 4, 5]
+print(l1[:-3:-1])
+print(l1[1:4:2])
+
+# index
+l1 = [1, 2, 300, 4, 5, 300, 6]
+print(l1.index(300))  # return first index where 300 is present
+
+# print(l1.index(10000)) # raise Exception when not present
+
+# count function
+l1 = [1, 2, 3, 1, 1, 1, 2, 3, 4, 5]
+print(l1.count(1))
+
+# pop function
+
+l1 = [1, 2, 3, 400, 5, 6]
+print(l1.pop(3))  # returns popped element
+print(l1)  # list after popping
+
+# remove function
+l1 = [1, 2, 3, 100, 20000, 100, 1]
+l1.remove(100)  # removes first occurrence of the given element
+print(l1)
